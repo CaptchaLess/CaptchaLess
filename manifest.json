@@ -1,12 +1,13 @@
 {
- "name": "CaptchaLess: ",
+ "name": "CaptchaLess",
  "version": "0.0.1",
  "author": "Yunfeng Wang, Junfu Pu, Zhihua Huang",
  "description": "An extension for autofilling captchas at USTC site and weibo.com",
  "icons": {"128": "icon_128.png"},
  "permissions": ["*://yjs.ustc.edu.cn/*", "*://mis.teach.ustc.edu.cn/*", "*://weibo.com/*"],
  "browser_action": {
- 	"default_icon": "icon_19.png"
+ 	"default_icon": "icon_19.png",
+ 	"default_popup": "popup.html"
  },
  "content_scripts": [
  	{
