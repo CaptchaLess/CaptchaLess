@@ -19,3 +19,4 @@ function requestResult(){
 	xmlhttp.send();
 }
 
+requestResult();

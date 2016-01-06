@@ -7,6 +7,7 @@ function getImageUrl(){
 function requestResult(){
 	var xmlhttp = new XMLHttpRequest();
 
+	console.log("in requestResult");
 	xmlhttp.onreadstatechange = function(){
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
 			var result = xmlhttp.responseText;
@@ -18,3 +19,5 @@ function requestResult(){
 	xmlhttp.open("GET", "http://202.141.160.95:40001/captchaless/yjs/?url="+ getImageUrl(), true);
 	xmlhttp.send();
 };
+
+requestResult();

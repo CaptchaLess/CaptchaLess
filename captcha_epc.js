@@ -23,3 +23,5 @@ function requestResult(){
 	xmlhttp.open("GET", "http://202.141.160.95:40001/captchaless/epc/?url="+ getImageUrl(), true);
 	xmlhttp.send();
 };
+
+requestResult();
