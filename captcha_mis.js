@@ -15,7 +15,7 @@ function requestResult(){
 		}
 	};
 
-	xmlhttp.open("GET", "http://202.141.160.95:40001/captchaless/mis/?url="+ getImageUrl(), true);
+	xmlhttp.open("GET", "http://202.141.160.95:40001/captchaless/mis?url="+ getImageUrl(), true);
 	xmlhttp.send();
 }
 
