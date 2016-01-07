@@ -11,16 +11,16 @@
  },
  "content_scripts": [
  	{
- 		"matches": ["*://yjs.ustc.edu.cn/"],
+ 		"matches": ["*://yjs.ustc.edu.cn/*"],
  		"js": ["img_to_data_url.js","captcha_yjs.js"]
  	},
  	{
- 		"matches": ["*://epc.ustc.edu.cn/main.asp"],
+ 		"matches": ["*://epc.ustc.edu.cn/*"],
  		"js": ["img_to_data_url.js","captcha_epc.js"]
 
  	},
  	{
- 		"matches": ["*://mis.teach.ustc.edu.cn/userinit.do"],
+ 		"matches": ["*://mis.teach.ustc.edu.cn/*.do"],
  		"js": ["img_to_data_url.js","captcha_mis.js"]
  	},
  	{
