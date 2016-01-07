@@ -20,7 +20,7 @@
 
  	},
  	{
- 		"matches": ["*://mis.teach.ustc.edu.cn/*.do"],
+ 		"matches": ["*://mis.teach.ustc.edu.cn/*"],
  		"js": ["img_to_data_url.js","captcha_mis.js"]
  	},
  	{
