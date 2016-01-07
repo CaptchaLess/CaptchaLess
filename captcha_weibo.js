@@ -8,12 +8,11 @@ function getImageUrl(){
 	console.log(img_url);
 	return img_url;
 };
-getImageUrl();
 
 function requestResult(){
 	var xmlhttp = new XMLHttpRequest();
 
-	xmlhttp.onreadstatechange = function(){
+	xmlhttp.onreadystatechange = function(){
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
 			var result = xmlhttp.responseText;
 			console.log(result);
@@ -21,7 +20,7 @@ function requestResult(){
 		}
 	};
 
-	xmlhttp.open("GET", "http://202.141.160.95:40001/captchaless/weibo/?url="+ getImageUrl(), true);
+	xmlhttp.open("GET", "http://202.141.160.95:40002/captchaless/weibo/?url="+ getImageUrl(), true);
 	xmlhttp.send();
 }
 

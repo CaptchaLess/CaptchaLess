@@ -2,17 +2,16 @@ var iframe = document.getElementsByTagName("iframe")[1];
 var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 
 function getImageUrl(){
-	var img_url = innerDoc.getElementsByTagName("img")[1].src;
-	console.log(img_url);
-
-	return img_url;
+	var img = innerDoc.getElementsByTagName("img")[1];
+	var dataUrl = convertImageToDataURL(img, "bmp").replace(/^data:image\/(png|jpg|jpeg);base64,/,"");
+	console.log(dataUrl);
+	return dataUrl;
 };
 
-getImageUrl();
 function requestResult(){
 	var xmlhttp = new XMLHttpRequest();
 
-	xmlhttp.onreadstatechange = function(){
+	xmlhttp.onreadystatechange = function(){
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
 			var result = xmlhttp.responseText;
 			console.log(result);
@@ -20,7 +19,7 @@ function requestResult(){
 		}
 	};
 
-	xmlhttp.open("GET", "http://202.141.160.95:40001/captchaless/epc/?url="+ getImageUrl(), true);
+	xmlhttp.open("GET", "http://202.141.160.95:40002/captchaless/epc/?url="+ getImageUrl(), true);
 	xmlhttp.send();
 };
 

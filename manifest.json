@@ -12,20 +12,20 @@
  "content_scripts": [
  	{
  		"matches": ["*://yjs.ustc.edu.cn/"],
- 		"js": ["captcha_yjs.js"]
+ 		"js": ["img_to_data_url.js","captcha_yjs.js"]
  	},
  	{
  		"matches": ["*://epc.ustc.edu.cn/main.asp"],
- 		"js": ["captcha_epc.js"]
+ 		"js": ["img_to_data_url.js","captcha_epc.js"]
 
  	},
  	{
  		"matches": ["*://mis.teach.ustc.edu.cn/userinit.do"],
- 		"js": ["captcha_mis.js"]
+ 		"js": ["img_to_data_url.js","captcha_mis.js"]
  	},
  	{
  		"matches": ["*://weibo.com/"],
- 		"js": ["captcha_weibo.js"]
+ 		"js": ["img_to_data_url.js","captcha_weibo.js"]
 
  	}
  ],
