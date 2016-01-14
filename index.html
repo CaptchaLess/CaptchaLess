@@ -37,10 +37,10 @@ This extension is our final project of Video Technology class. Although most of 
 <h3>
 <a id="main-work" class="anchor" href="#main-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Main Work</h3>
 
-<p>In this project, we have mainly three parts of works: 
-1. Server part based on django framework
-2. Algorithm implement for captcha recognition
-3. Front-end code for getting captcha image and autofilling the result  </p>
+<p>In this project, we have mainly three parts of works:<br>
+1. Server part based on django framework<br>
+2. Algorithm implement for captcha recognition<br>
+3. Front-end code for getting captcha image and autofilling the result    </p>
 
 <p>Chrome extension get captcha image first in HTML DOM, and send data to server in the url, in the format of base64. In the back end, Django server read the url and decode it to image data, and then send it to recognition part to get the result. Finally the result send to front end in the format of Http Response.<br>
 You can get source code for each part at github: <a href="https://github.com/CaptchaLess/mysite">server</a>, <a href="https://github.com/CaptchaLess/Algorithm">algorithm</a>, and <a href="https://github.com/CaptchaLess/CaptchaLess">front-end code</a>.</p>
