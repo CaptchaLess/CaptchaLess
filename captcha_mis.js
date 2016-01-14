@@ -1,10 +1,21 @@
-function getImageUrl(){
-	var img_url = document.getElementById("random").src;
-	console.log(img_url);
-	return img_url;
+function parseCaptcha(){
+	var img = document.getElementById("random");
+	if (img !== "undefined" && img.width !== 0) {
+		var dataURL = convertImageToDataURL(img, "jpg");
+		requestResult(dataURL);
+		return;
+	}
+	else {
+		img.onload = function(){
+		var dataURL = convertImageToDataURL(this, "jpg");
+		
+		requestResult(dataURL);
+		return;
+		};
+	}
 };
 
-function requestResult(){
+function requestResult(dataURL){
 	var xmlhttp = new XMLHttpRequest();
 
 	xmlhttp.onreadystatechange = function(){
@@ -15,8 +26,8 @@ function requestResult(){
 		}
 	};
 
-	xmlhttp.open("GET", "http://202.141.160.95:40002/captchaless/mis/?url="+ getImageUrl(), true);
+	xmlhttp.open("GET", "http://202.141.160.95:40002/captchaless/mis/?url="+ dataURL, true);
 	xmlhttp.send();
 }
 
-requestResult();
+parseCaptcha();
