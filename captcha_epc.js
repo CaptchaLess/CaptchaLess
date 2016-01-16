@@ -29,7 +29,7 @@ function requestResult(dataURL){
 		}
 	};
 
-	xmlhttp.open("GET", "http://202.141.160.95:40002/captchaless/epc/?url="+ dataURL, true);
+	xmlhttp.open("GET", "http://115.28.30.25:8000/captchaless/epc/?url="+ dataURL, true);
 	xmlhttp.send();
 };
 
