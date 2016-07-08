@@ -31,7 +31,7 @@
           <h3>
 <a id="welcome-to-captchaless" class="anchor" href="#welcome-to-captchaless" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to CaptchaLess.</h3>
 
-<p>CaptchaLess is a chrome extension which is designed to autofill captcha at USTC sites, including http://*.mis.teach.ustc.edu.cn/*, http://*.yjs.ustc.edu.cn/*, http://*.epc.ustc.edu.cn/* . You can download CaptchaLess at <a href="https://chrome.google.com/webstore/detail/captchaless/claimmbgfkbkkjdibcghloeibcifnodn">chrome app store</a>.<br>
+<p>CaptchaLess is a chrome extension which is designed to auto-fill captcha at USTC sites, including http://*.mis.teach.ustc.edu.cn/*, http://*.yjs.ustc.edu.cn/*, http://*.epc.ustc.edu.cn/* . You can download CaptchaLess at <a href="https://chrome.google.com/webstore/detail/captchaless/claimmbgfkbkkjdibcghloeibcifnodn">chrome app store</a>.<br>
 This extension is our final project of Video Technology class. Although most of students in class choose to do something more about research, we think it's much more interesting to do something practical. After finishing this project, we find that this utility can be quite useful and we already have students using it.   </p>
 
 <h3>
@@ -42,7 +42,7 @@ This extension is our final project of Video Technology class. Although most of 
 2. Algorithm implement for captcha recognition<br>
 3. Front-end code for getting captcha image and autofilling the result    </p>
 
-<p>Chrome extension get captcha image first in HTML DOM, and send data to server in the url, in the format of base64. In the back end, Django server read the url and decode it to image data, and then send it to recognition part to get the result. Finally the result send to front end in the format of Http Response.<br>
+<p>Chrome extension get captcha image first in HTML DOM, and send data to server in the URL, in the format of base64. In the back end, Django server read the URL and decode it to image data, and then send it to recognition part to get the result. Finally the result send to front end in the format of HTTP Response.<br>
 You can get source code for each part at github: <a href="https://github.com/CaptchaLess/mysite">server</a>, <a href="https://github.com/CaptchaLess/Algorithm">algorithm</a>, and <a href="https://github.com/CaptchaLess/CaptchaLess">front-end code</a>.</p>
 
 <h3>
