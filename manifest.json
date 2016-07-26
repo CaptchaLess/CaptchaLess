@@ -2,7 +2,7 @@
  "name": "CaptchaLess",
  "version": "1.0.7",
  "author": "Yunfeng Wang, Junfu Pu, Zhihua Huang",
- "description": "An extension for autofilling captchas at USTC site and weibo.com",
+ "description": "An extension for autofilling captchas at USTC sites",
  "icons": {"128": "icon_128.png"},
  "permissions": ["*://yjs.ustc.edu.cn/*", "*://mis.teach.ustc.edu.cn/*", "*://weibo.com/*"],
  "browser_action": {
