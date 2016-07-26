@@ -2,8 +2,7 @@ var iframe = document.getElementsByTagName("iframe")[1];
 var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 
 function parseCaptcha(){
-	var imgArray = innerDoc.getElementsByTagName("img");
-	var img = imgArray[imgArray.length - 1];
+	var img = innerDoc.getElementsByTagName("img")[1];
 	if (img !== "undefined" && img.width !== 0) {
 		var dataURL = convertImageToDataURL(img, "bmp");
 		requestResult(dataURL);

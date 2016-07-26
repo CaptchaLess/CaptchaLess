@@ -1,5 +1,5 @@
 function parseCaptcha(){
-	var img = document.getElementById("random");
+	var img = document.getElementById("dfyctp");
 	if (img !== "undefined" && img.width !== 0) {
 		var dataURL = convertImageToDataURL(img, "jpg");
 		requestResult(dataURL);
